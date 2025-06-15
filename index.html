@@ -277,3 +277,74 @@
       📤
     </button>
   </div>
+<!-- Footer -->
+  <footer style="background: rgba(10,10,10,0.8); backdrop-filter: blur(10px); color: #ccc; padding: 2rem 1rem; text-align: center; border-top: 1px solid rgba(255,255,255,0.1);">
+    <p>Powered by AI & Human Creativity – Y&Z Studio</p>
+    <p style="font-size:0.9rem;">Copyright © 2025 Yuda Nugroho Widyanto</p>
+    <button onclick="document.getElementById('adminLogin').scrollIntoView()" style="margin-top: 1rem; padding: 0.5rem 1rem; background: #00ffff33; border: none; color: white; border-radius: 10px;">Login Admin</button>
+  </footer>
+
+  <!-- Admin Login -->
+  <section id="adminLogin" style="padding: 2rem; background: rgba(0,0,0,0.4); backdrop-filter: blur(8px); text-align: center;">
+    <h2 style="color:#00ffff;">Admin Panel</h2>
+    <input type="text" id="adminUser" placeholder="Username" style="margin:0.5rem; padding:0.5rem; border-radius:5px;">
+    <input type="password" id="adminPass" placeholder="Password" style="margin:0.5rem; padding:0.5rem; border-radius:5px;">
+    <button onclick="adminLogin()" style="padding:0.5rem 1rem; background:#00ffff; border:none; border-radius:5px; margin-left:0.5rem;">Login</button>
+    <p id="adminStatus" style="color:#ccc; margin-top:1rem;"></p>
+  </section>
+
+  <!-- Wallpaper Background -->
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://i.ibb.co/Vv8kRY7/rain-glass-wallpaper.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+    .section {
+      padding: 4rem 1rem;
+      margin: 2rem auto;
+      max-width: 960px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 1.5rem;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 30px rgba(0,255,255,0.1);
+    }
+  </style>
+
+  <!-- iPhone Head Island -->
+  <div style="position:fixed; top:15px; left:50%; transform:translateX(-50%); background:#000; padding:10px 20px; border-radius:30px; color:#00ffff; font-weight:bold; font-size:1rem; z-index:1000; box-shadow:0 0 15px #00ffff88;" id="headIsland">
+    <span id="islandText">Y&Z – Solusi Digital Terbaik</span>
+  </div>
+  <script>
+    const phrases = [
+      "Y&Z – Solusi Digital Terbaik",
+      "Website Modern, Admin Editable",
+      "Landing Page Kece Untuk Bisnismu",
+      "Hubungi Kami Kapan Saja!"
+    ];
+    let index = 0;
+    setInterval(() => {
+      document.getElementById("islandText").innerText = phrases[index];
+      index = (index + 1) % phrases.length;
+    }, 3000);
+  </script>
+
+  <!-- Admin Logic -->
+  <script>
+    function adminLogin() {
+      const user = document.getElementById('adminUser').value;
+      const pass = document.getElementById('adminPass').value;
+      const status = document.getElementById('adminStatus');
+      if (user === 'admin' && pass === '123') {
+        status.innerText = 'Login berhasil! Panel admin diaktifkan.';
+        // Simulasi show fitur admin
+      } else {
+        status.innerText = 'Login gagal. Coba lagi.';
+      }
+    }
+  </script>
+
+</body>
+</html>

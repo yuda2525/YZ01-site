@@ -200,3 +200,80 @@
       </div>
     </div>
   </section>
+<!-- FAQ / Q&A Section -->
+  <section class="section" id="faq">
+    <h2 style="text-align:center; font-size:2rem; margin-bottom:1.5rem; color:#00ffff">Pertanyaan Umum</h2>
+    <div class="accordion">
+      <div class="accordion-item">
+        <button class="accordion-btn">Berapa lama pengerjaan rata-rata?</button>
+        <div class="accordion-content">Minimal 3 hari kerja untuk Basic & Pro. Premium bisa up to 3 hari atau lebih.</div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-btn">Apakah bisa revisi?</button>
+        <div class="accordion-content">Ya, revisi sesuai paket: 1x (Basic), 2x (Pro), bebas (Premium/Custom) dengan masa berlaku tertentu.</div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-btn">Apa metode pembayaran yang diterima?</button>
+        <div class="accordion-content">Kami menerima pembayaran via Dana, Bank Transfer, Visa, dan metode lainnya via panel admin.</div>
+      </div>
+    </div>
+
+    <script>
+      const accBtns = document.querySelectorAll(".accordion-btn");
+      accBtns.forEach(btn => {
+        btn.addEventListener("click", () => {
+          btn.classList.toggle("active");
+          const content = btn.nextElementSibling;
+          content.style.maxHeight = content.style.maxHeight ? null : content.scrollHeight + "px";
+        });
+      });
+    </script>
+    <style>
+      .accordion-item {
+        background: rgba(255,255,255,0.05);
+        margin-bottom: 1rem;
+        border-radius: 1rem;
+        overflow: hidden;
+      }
+      .accordion-btn {
+        background: none;
+        color: #00ffff;
+        border: none;
+        padding: 1rem;
+        width: 100%;
+        text-align: left;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      .accordion-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        padding: 0 1rem;
+        color: #ddd;
+      }
+    </style>
+  </section>
+
+  <!-- CTA Akhir -->
+  <section class="section" style="text-align: center;">
+    <h2 style="font-size: 1.8rem; margin-bottom: 1rem; color:#00ffff">Yakin Mau Mulai Proyek Digitalmu?</h2>
+    <a href="https://wa.me/6285720906090" target="_blank" style="background: #00ffcc; color: #000; padding: 1rem 2rem; border-radius: 3rem; font-weight: bold; display:inline-block; text-decoration: none;">Chat Sekarang via WhatsApp</a>
+  </section>
+
+  <!-- Floating Contact Icons -->
+  <div style="position: fixed; top: 50%; right: 10px; transform: translateY(-50%); z-index: 999;">
+    <a href="https://wa.me/6285720906090" target="_blank" style="display:block; margin-bottom:10px;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="40" alt="WhatsApp">
+    </a>
+    <a href="mailto:yudabastard84@gmail.com" style="display:block;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.svg" width="40" alt="Gmail">
+    </a>
+  </div>
+
+  <!-- Toggle Share (Bottom Right) -->
+  <div style="position:fixed; bottom:20px; right:20px; z-index:999;">
+    <button onclick="navigator.share({title: 'Y&Z Studio', text: 'Cek digital service ini!', url: window.location.href})" style="background:#00ffff; border:none; padding:1rem; border-radius:50%; box-shadow:0 0 10px #00ffff99;">
+      📤
+    </button>
+  </div>

@@ -2,349 +2,189 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Y&Z Studio - Solusi Digital Terbaik</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Y&Z Studio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    * {
-      margin: 0; padding: 0;
-      box-sizing: border-box;
+    body {
+      background: #0a0a0f url('https://yuda2525.github.io/YZ01-site/yz21_wallpaper_final.jpg') no-repeat center center fixed;
+      background-size: cover;
       font-family: 'Poppins', sans-serif;
     }
-    html, body {
-      background: linear-gradient(135deg, #0e1013, #1e2127);
-      color: #fff;
-      scroll-behavior: smooth;
+    .glass {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
     }
-
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0; left: 0; width: 100%; height: 100%;
-      background: url('https://i.imgur.com/s7MbZW9.jpg') no-repeat center center fixed;
-      background-size: cover;
-      opacity: 0.15;
-      z-index: -1;
-      filter: blur(2px);
-    }
-
-    header {
-      background: rgba(255, 255, 255, 0.05);
-      backdrop-filter: blur(10px);
-      padding: 3rem 1rem 2rem;
-      text-align: center;
-      border-bottom: 1px solid rgba(255,255,255,0.1);
-      position: relative;
-    }
-
-    .island {
-      display: inline-block;
-      background: #000;
-      padding: 0.5rem 1rem;
-      border-radius: 2rem;
+    #jamRainbow {
+      background-image: linear-gradient(90deg, red, orange, yellow, green, cyan, blue, violet);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
       font-weight: bold;
-      color: #00ffff;
-      animation: slide-in 8s infinite alternate ease-in-out;
-      box-shadow: 0 0 20px #00ffff55;
-    }
-
-    @keyframes slide-in {
-      0% { transform: translateX(-60px); opacity: 0.3;}
-      50% { transform: translateX(0); opacity: 1;}
-      100% { transform: translateX(60px); opacity: 0.3;}
-    }
-
-    .hero-title {
-      font-size: 2.5rem;
-      font-weight: 600;
-      margin: 1rem 0 0.5rem;
-      color: #ffffffee;
-    }
-
-    .hero-sub {
-      font-size: 1.1rem;
-      color: #bbb;
-    }
-
-    .section {
-      padding: 3rem 1rem;
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    .welcome-box {
-      background: rgba(255, 255, 255, 0.05);
-      border-radius: 1.5rem;
-      padding: 2rem;
-      backdrop-filter: blur(12px);
-      box-shadow: 0 0 25px rgba(0, 255, 255, 0.07);
-      color: #e0f0ff;
-      margin-top: 2rem;
-    }
-
-    .welcome-box h2 {
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
-      color: #fff;
-    }
-
-    .welcome-box p {
-      font-size: 1rem;
-      color: #ccc;
     }
   </style>
 </head>
-<body>
+<body class="text-white">
 
-  <!-- Header Island Autoplay -->
-  <header>
-    <div class="island">
-      Y&Z - SOLUSI DIGITAL TERBAIK
-    </div>
-    <h1 class="hero-title">Selamat datang di Y&Z Studio</h1>
-    <p class="hero-sub">Partner digital Anda menuju sukses online yang lebih mudah & efisien.</p>
-    
-    <div class="welcome-box">
-      <h2>Kenapa Memilih Kami?</h2>
-      <p>Kami bantu Anda punya website modern, cepat, dan tampil beda. Mulai dari bisnis kecil, UMKM, hingga perusahaan besar.</p>
-    </div>
+  <!-- ISLAND HEADER -->
+  <div class="fixed top-2 left-1/2 -translate-x-1/2 z-50 rounded-full bg-black/60 backdrop-blur-md border border-white/20 shadow-lg px-4 py-2 text-sm font-semibold text-white w-[40vw] max-w-[320px] text-center">
+    <span id="jamRainbow">00:00:00</span>
+  </div>
+
+  <!-- HEADER -->
+  <header class="text-center py-12">
+    <h1 class="text-4xl font-bold">Y&Z Studio</h1>
+    <p class="text-white/70 mt-2">Solusi Digital Terbaik</p>
   </header>
-<!-- Section Harga -->
-  <section class="section" id="harga">
-    <h2 style="text-align:center; font-size:2rem; margin-bottom:1.5rem; color:#00ffff">Paket Layanan Kami</h2>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
-      <div style="background: rgba(255,255,255,0.05); padding: 2rem; border-radius: 1rem; box-shadow: 0 0 20px #0099ff33;">
-        <h3>Basic</h3>
-        <p>Mulai dari Rp350.000</p>
-        <ul>
-          <li>1 halaman landing</li>
-          <li>Desain responsive</li>
-          <li>Revisi: 1x | Valid 3 hari kerja</li>
-        </ul>
-      </div>
-      <div style="background: rgba(255,255,255,0.05); padding: 2rem; border-radius: 1rem; box-shadow: 0 0 20px #00ccff33;">
-        <h3>Pro</h3>
-        <p>Mulai dari Rp600.000</p>
-        <ul>
-          <li>3 halaman (Landing, Portofolio, FAQ)</li>
-          <li>Admin Panel</li>
-          <li>Revisi: 2x | Valid 3 hari kerja</li>
-        </ul>
-      </div>
-      <div style="background: rgba(255,255,255,0.05); padding: 2rem; border-radius: 1rem; box-shadow: 0 0 20px #00ffff33;">
-        <h3>Premium</h3>
-        <p>Mulai dari Rp950.000</p>
-        <ul>
-          <li>Full website (5 halaman+)</li>
-          <li>Admin lengkap & database</li>
-          <li>Revisi: Bebas | Up to 3 hari kerja</li>
-        </ul>
-      </div>
-      <div style="background: rgba(255,255,255,0.05); padding: 2rem; border-radius: 1rem; box-shadow: 0 0 20px #00ffff33;">
-        <h3>Custom</h3>
-        <p>Mulai dari Rp1.000.000</p>
-        <ul>
-          <li>Kebutuhan khusus (App, Sistem, Dll)</li>
-          <li>Flexible & scalable</li>
-          <li>Diskusi lebih lanjut via WA</li>
-        </ul>
-      </div>
+
+  <!-- SECTION: ARTIKEL -->
+  <section class="glass rounded-2xl mx-auto my-8 p-6 w-11/12 max-w-2xl">
+    <h2 class="text-xl font-semibold mb-3">Tips Digital Hari Ini</h2>
+    <div id="tipText" class="text-lg font-medium text-white/90">Optimalkan bisnis kamu dengan landing page yang menarik!</div>
+  </section>
+  <script>
+    const tips = [
+      "Optimalkan bisnis kamu dengan landing page yang menarik!",
+      "Gunakan warna CTA yang kontras untuk konversi lebih tinggi.",
+      "Pastikan websitemu mobile-friendly.",
+      "SEO itu penting! Gunakan keyword relevan."
+    ];
+    let tipIndex = 0;
+    setInterval(() => {
+      tipIndex = (tipIndex + 1) % tips.length;
+      document.getElementById("tipText").innerText = tips[tipIndex];
+    }, 3500);
+  </script>
+
+  <!-- SECTION: TESTIMONI -->
+  <section class="glass rounded-2xl mx-auto my-8 p-6 w-11/12 max-w-4xl">
+    <h2 class="text-xl font-semibold mb-3">Apa Kata Klien</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="bg-white/5 p-4 rounded-xl">Layanan cepat dan hasilnya memuaskan! 🌟</div>
+      <div class="bg-white/5 p-4 rounded-xl">Design-nya keren banget, langsung suka dari awal. 👍</div>
+      <div class="bg-white/5 p-4 rounded-xl">Bisa request custom sesuai keinginan, mantap! 💯</div>
     </div>
   </section>
 
-  <!-- CTA -->
-  <section class="section" style="text-align: center;">
-    <h2 style="font-size: 1.8rem; margin-bottom: 1rem; color:#00ffff">Ingin mulai proyek Anda bersama kami?</h2>
-    <a href="https://wa.me/6285720906090" target="_blank" style="background: #00ffcc; color: #000; padding: 1rem 2rem; border-radius: 3rem; font-weight: bold; display:inline-block; text-decoration: none;">Mulai Sekarang via WhatsApp</a>
-  </section>
-
-  <!-- Artikel Tips Digital & Testimoni (Autoplay) -->
-  <section class="section">
-    <h2 style="text-align:center; font-size:2rem; margin-bottom:1.5rem; color:#00ffff">Tips Digital & Apa Kata Klien</h2>
-    <div style="overflow-x: auto; white-space: nowrap; scroll-behavior: smooth;" id="autoScroll">
-      <div style="display:inline-block; width:300px; margin-right:1rem; background:#ffffff0d; padding:1rem; border-radius:1rem;">
-        <strong>Tips:</strong><br> Gunakan warna kontras & font tegas di landing page Anda.
-      </div>
-      <div style="display:inline-block; width:300px; margin-right:1rem; background:#ffffff0d; padding:1rem; border-radius:1rem;">
-        <strong>Testimoni:</strong><br> “Keren! Web-nya modern & gampang diedit. Thanks Y&Z Studio!”
-      </div>
-      <div style="display:inline-block; width:300px; margin-right:1rem; background:#ffffff0d; padding:1rem; border-radius:1rem;">
-        <strong>Tips:</strong><br> CTA harus selalu mudah ditemukan & aktif.
-      </div>
-    </div>
-    <script>
-      setInterval(() => {
-        const scroll = document.getElementById("autoScroll");
-        scroll.scrollLeft += 1;
-        if (scroll.scrollLeft >= scroll.scrollWidth - scroll.clientWidth) {
-          scroll.scrollLeft = 0;
-        }
-      }, 30);
-    </script>
-  </section>
-
-  <!-- Portofolio -->
-  <section class="section" id="portofolio">
-    <h2 style="text-align:center; font-size:2rem; margin-bottom:1.5rem; color:#00ffff">Portofolio Terbaru Kami</h2>
-    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
-      <div style="background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 1rem;">
-        <h3>Project A</h3>
-        <p>Website UMKM – landing page & produk</p>
-        <a href="#!" style="color:#00ffff; text-decoration: underline;">Lihat Detail</a>
-      </div>
-      <div style="background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 1rem;">
-        <h3>Project B</h3>
-        <p>Company profile dengan animasi & form kontak</p>
-        <a href="#!" style="color:#00ffff; text-decoration: underline;">Lihat Detail</a>
-      </div>
+  <!-- SECTION: FAQ -->
+  <section class="glass rounded-2xl mx-auto my-8 p-6 w-11/12 max-w-3xl">
+    <h2 class="text-xl font-semibold mb-4">Pertanyaan Umum</h2>
+    <div>
+      <details class="mb-4">
+        <summary class="cursor-pointer font-semibold">Apakah bisa request desain khusus?</summary>
+        <p class="mt-2 text-white/80">Tentu! Kami menyediakan paket custom sesuai kebutuhanmu.</p>
+      </details>
+      <details class="mb-4">
+        <summary class="cursor-pointer font-semibold">Berapa lama proses pengerjaan?</summary>
+        <p class="mt-2 text-white/80">Mulai dari 3–7 hari kerja tergantung kompleksitas proyek.</p>
+      </details>
+      <details>
+        <summary class="cursor-pointer font-semibold">Apakah revisi dikenakan biaya?</summary>
+        <p class="mt-2 text-white/80">Tidak, selama masih dalam masa validasi revisi (7 hari).</p>
+      </details>
     </div>
   </section>
-<!-- FAQ / Q&A Section -->
-  <section class="section" id="faq">
-    <h2 style="text-align:center; font-size:2rem; margin-bottom:1.5rem; color:#00ffff">Pertanyaan Umum</h2>
-    <div class="accordion">
-      <div class="accordion-item">
-        <button class="accordion-btn">Berapa lama pengerjaan rata-rata?</button>
-        <div class="accordion-content">Minimal 3 hari kerja untuk Basic & Pro. Premium bisa up to 3 hari atau lebih.</div>
-      </div>
-      <div class="accordion-item">
-        <button class="accordion-btn">Apakah bisa revisi?</button>
-        <div class="accordion-content">Ya, revisi sesuai paket: 1x (Basic), 2x (Pro), bebas (Premium/Custom) dengan masa berlaku tertentu.</div>
-      </div>
-      <div class="accordion-item">
-        <button class="accordion-btn">Apa metode pembayaran yang diterima?</button>
-        <div class="accordion-content">Kami menerima pembayaran via Dana, Bank Transfer, Visa, dan metode lainnya via panel admin.</div>
-      </div>
-    </div>
 
-    <script>
-      const accBtns = document.querySelectorAll(".accordion-btn");
-      accBtns.forEach(btn => {
-        btn.addEventListener("click", () => {
-          btn.classList.toggle("active");
-          const content = btn.nextElementSibling;
-          content.style.maxHeight = content.style.maxHeight ? null : content.scrollHeight + "px";
-        });
-      });
-    </script>
-    <style>
-      .accordion-item {
-        background: rgba(255,255,255,0.05);
-        margin-bottom: 1rem;
-        border-radius: 1rem;
-        overflow: hidden;
-      }
-      .accordion-btn {
-        background: none;
-        color: #00ffff;
-        border: none;
-        padding: 1rem;
-        width: 100%;
-        text-align: left;
-        font-weight: bold;
-        cursor: pointer;
-      }
-      .accordion-content {
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.3s ease;
-        padding: 0 1rem;
-        color: #ddd;
-      }
-    </style>
-  </section>
-
-  <!-- CTA Akhir -->
-  <section class="section" style="text-align: center;">
-    <h2 style="font-size: 1.8rem; margin-bottom: 1rem; color:#00ffff">Yakin Mau Mulai Proyek Digitalmu?</h2>
-    <a href="https://wa.me/6285720906090" target="_blank" style="background: #00ffcc; color: #000; padding: 1rem 2rem; border-radius: 3rem; font-weight: bold; display:inline-block; text-decoration: none;">Chat Sekarang via WhatsApp</a>
-  </section>
-
-  <!-- Floating Contact Icons -->
-  <div style="position: fixed; top: 50%; right: 10px; transform: translateY(-50%); z-index: 999;">
-    <a href="https://wa.me/6285720906090" target="_blank" style="display:block; margin-bottom:10px;">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="40" alt="WhatsApp">
-    </a>
-    <a href="mailto:yudabastard84@gmail.com" style="display:block;">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.svg" width="40" alt="Gmail">
-    </a>
-  </div>
-
-  <!-- Toggle Share (Bottom Right) -->
-  <div style="position:fixed; bottom:20px; right:20px; z-index:999;">
-    <button onclick="navigator.share({title: 'Y&Z Studio', text: 'Cek digital service ini!', url: window.location.href})" style="background:#00ffff; border:none; padding:1rem; border-radius:50%; box-shadow:0 0 10px #00ffff99;">
-      📤
-    </button>
-  </div>
-<!-- Footer -->
-  <footer style="background: rgba(10,10,10,0.8); backdrop-filter: blur(10px); color: #ccc; padding: 2rem 1rem; text-align: center; border-top: 1px solid rgba(255,255,255,0.1);">
-    <p>Powered by AI & Human Creativity – Y&Z Studio</p>
-    <p style="font-size:0.9rem;">Copyright © 2025 Yuda Nugroho Widyanto</p>
-    <button onclick="document.getElementById('adminLogin').scrollIntoView()" style="margin-top: 1rem; padding: 0.5rem 1rem; background: #00ffff33; border: none; color: white; border-radius: 10px;">Login Admin</button>
+  <!-- FOOTER -->
+  <footer class="text-center text-sm py-6 text-white/60">
+    <p>&copy; 2025 Y&Z Studio — Powered by AI & Human Creativity</p>
   </footer>
 
-  <!-- Admin Login -->
-  <section id="adminLogin" style="padding: 2rem; background: rgba(0,0,0,0.4); backdrop-filter: blur(8px); text-align: center;">
-    <h2 style="color:#00ffff;">Admin Panel</h2>
-    <input type="text" id="adminUser" placeholder="Username" style="margin:0.5rem; padding:0.5rem; border-radius:5px;">
-    <input type="password" id="adminPass" placeholder="Password" style="margin:0.5rem; padding:0.5rem; border-radius:5px;">
-    <button onclick="adminLogin()" style="padding:0.5rem 1rem; background:#00ffff; border:none; border-radius:5px; margin-left:0.5rem;">Login</button>
-    <p id="adminStatus" style="color:#ccc; margin-top:1rem;"></p>
-  </section>
+  <!-- SCRIPT JAM -->
+  <script>
+    function updateTime() {
+      const now = new Date();
+      const jam = now.toLocaleTimeString('id-ID', { hour12: false });
+      document.getElementById('jamRainbow').innerText = jam;
+    }
+    setInterval(updateTime, 1000);
+    updateTime();
+  </script>
 
-  <!-- Wallpaper Background -->
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Y&Z Studio - Combined View</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
     body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: url('https://i.ibb.co/Vv8kRY7/rain-glass-wallpaper.jpg') no-repeat center center fixed;
+      font-family: 'Poppins', sans-serif;
+      background: #0a0a0f url('https://yuda2525.github.io/YZ01-site/yz21_wallpaper_final.jpg') no-repeat center center fixed;
       background-size: cover;
-      color: white;
     }
-    .section {
-      padding: 4rem 1rem;
-      margin: 2rem auto;
-      max-width: 960px;
-      background: rgba(255, 255, 255, 0.05);
-      border-radius: 1.5rem;
-      backdrop-filter: blur(10px);
-      box-shadow: 0 0 30px rgba(0,255,255,0.1);
+    .glass {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+    }
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
     }
   </style>
+</head>
+<body class="text-white">
 
-  <!-- iPhone Head Island -->
-  <div style="position:fixed; top:15px; left:50%; transform:translateX(-50%); background:#000; padding:10px 20px; border-radius:30px; color:#00ffff; font-weight:bold; font-size:1rem; z-index:1000; box-shadow:0 0 15px #00ffff88;" id="headIsland">
-    <span id="islandText">Y&Z – Solusi Digital Terbaik</span>
-  </div>
+  <!-- HEADER -->
+  <header class="text-center py-8">
+    <div class="text-2xl font-bold">Y&Z Studio</div>
+    <div class="text-sm text-white/80">Solusi Digital Terbaik</div>
+  </header>
+
+  <!-- ARTIKEL - Tips Digital -->
+  <section class="glass rounded-2xl mx-auto my-8 p-6 w-11/12 max-w-2xl">
+    <div class="section-title">Tips Digital Hari Ini</div>
+    <div id="tipText" class="text-white/90 text-lg font-medium">Optimalkan bisnis kamu dengan landing page yang cepat dan menarik!</div>
+  </section>
   <script>
-    const phrases = [
-      "Y&Z – Solusi Digital Terbaik",
-      "Website Modern, Admin Editable",
-      "Landing Page Kece Untuk Bisnismu",
-      "Hubungi Kami Kapan Saja!"
+    const tips = [
+      "Optimalkan bisnis kamu dengan landing page yang cepat dan menarik!",
+      "Gunakan warna yang kontras untuk CTA yang efektif.",
+      "Pastikan website kamu mobile-friendly.",
+      "SEO itu penting! Gunakan keyword relevan di setiap halaman."
     ];
-    let index = 0;
+    let tipIndex = 0;
     setInterval(() => {
-      document.getElementById("islandText").innerText = phrases[index];
-      index = (index + 1) % phrases.length;
-    }, 3000);
+      tipIndex = (tipIndex + 1) % tips.length;
+      document.getElementById("tipText").innerText = tips[tipIndex];
+    }, 3500);
   </script>
 
-  <!-- Admin Logic -->
-  <script>
-    function adminLogin() {
-      const user = document.getElementById('adminUser').value;
-      const pass = document.getElementById('adminPass').value;
-      const status = document.getElementById('adminStatus');
-      if (user === 'admin' && pass === '123') {
-        status.innerText = 'Login berhasil! Panel admin diaktifkan.';
-        // Simulasi show fitur admin
-      } else {
-        status.innerText = 'Login gagal. Coba lagi.';
-      }
-    }
-  </script>
+  <!-- TESTIMONI -->
+  <section class="glass rounded-2xl mx-auto my-8 p-6 w-11/12 max-w-4xl">
+    <div class="section-title">Apa Kata Klien</div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4" id="testimonialBox">
+      <div class="bg-white/5 p-4 rounded-xl">Layanan sangat cepat dan hasilnya memuaskan! 🌟</div>
+      <div class="bg-white/5 p-4 rounded-xl">Design-nya keren banget, langsung suka dari awal. 👍</div>
+      <div class="bg-white/5 p-4 rounded-xl">Bisa request custom sesuai keinginan, mantap! 💯</div>
+    </div>
+  </section>
+
+  <!-- FAQ / Q&A -->
+  <section class="glass rounded-2xl mx-auto my-8 p-6 w-11/12 max-w-3xl">
+    <div class="section-title">Pertanyaan Umum</div>
+    <div>
+      <details class="mb-4">
+        <summary class="cursor-pointer font-semibold">Apakah bisa request desain khusus?</summary>
+        <p class="mt-2 text-white/80">Tentu! Kami menyediakan paket custom sesuai kebutuhanmu.</p>
+      </details>
+      <details class="mb-4">
+        <summary class="cursor-pointer font-semibold">Berapa lama proses pengerjaan?</summary>
+        <p class="mt-2 text-white/80">Mulai dari 3–7 hari kerja tergantung kompleksitas.</p>
+      </details>
+      <details>
+        <summary class="cursor-pointer font-semibold">Apakah revisi dikenakan biaya?</summary>
+        <p class="mt-2 text-white/80">Revisi tidak dikenakan biaya selama masih dalam masa validasi revisi (7 hari).</p>
+      </details>
+    </div>
+  </section>
 
 </body>
 </html>
